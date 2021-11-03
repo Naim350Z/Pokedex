@@ -58,3 +58,35 @@ h1 {
   padding-left: 5px;
   color: #f1f1f1;
 }
+
+/* Liste des containers */
+
+.container {
+  width: 70%;
+  max-width: 1110px;
+  height: auto;
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.liste-poke li {
+  width: 250px;
+  height: auto;
+  padding: 15px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.liste-poke h5 {
+  font-size: 19px;
+}
+.liste-poke p {
+  font-size: 18px;
+}

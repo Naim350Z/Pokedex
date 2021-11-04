@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,13 +16,15 @@
 
         <label for="recherche">Chercher un pokémon</label>
         <input type="text" id="recherche">
-        <!-- <button type="submit">Rechercher</button> -->
 
         <!-- Loader -->
-        <div class="loader">
-            <div class="point"></div>
-            <div class="point"></div>
-            <div class="point"></div>
+
+        <div id="loading">
+            <div class="pokeball" id="normal"></div>
+            <div class="pokeball" id="great"></div>
+            <div class="pokeball" id="ultra"></div>
+            <div class="pokeball" id="master"></div>
+            <div class="pokeball" id="safari"></div>
         </div>
 
     </form>

@@ -76,6 +76,9 @@ function createCard(arr) {
     txtCarte.innerText = arr[i].name;
     const idCarte = document.createElement("p");
     idCarte.innerText = `ID#${arr[i].id}`;
+    const infosTxt = document.createElement("a");
+    infosTxt.href = "#modaleId";
+    infosTxt.innerText = `En savoir plus`;
     const imgCarte = document.createElement("img");
     imgCarte.src = arr[i].pic;
 
@@ -83,9 +86,22 @@ function createCard(arr) {
     carte.appendChild(imgCarte);
     carte.appendChild(txtCarte);
     carte.appendChild(idCarte);
+    carte.appendChild(infosTxt);
 
     //Ajout de carte dans ul.listePoke
     listePoke.appendChild(carte);
+  }
+}
+function Modal(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let couleur = types[arr[i].type];
+    carte.style.background = couleur;
+    const txtCarte = document.createElement("h5");
+    txtCarte.innerText = arr[i].name;
+    const idCarte = document.createElement("p");
+    idCarte.innerText = `ID#${arr[i].id}`;
+    const imgCarte = document.createElement("img");
+    imgCarte.src = arr[i].pic;
   }
 }
 
@@ -140,3 +156,5 @@ searchInput.addEventListener("input", function (e) {
     e.target.parentNode.classList.remove("active-input");
   }
 });
+
+//Modale

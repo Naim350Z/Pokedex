@@ -18,65 +18,6 @@ h1 {
   color: #f1f1f1;
 }
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #333;
-  color: #333;
-}
-
-h1 {
-  text-align: center;
-  padding: 25px 0;
-  color: #f1f1f1;
-}
-
-.recherche-poke {
-  max-width: 700px;
-  width: 70%;
-  min-width: 450px;
-  margin: 30px auto;
-  position: relative;
-  display: flex;
-}
-
-.inp-group {
-  width: 100%;
-}
-
-.recherche-poke input {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  outline: none;
-  border-radius: 3px;
-  font-size: 18px;
-}
-
-.recherche-poke label {
-  position: absolute;
-  color: #333;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-left: 8px;
-  transition: all 0.3s ease-in;
-}
-
-/* animation d'input */
-.recherche-poke:focus-within label,
-.recherche-poke.active-input label {
-  top: -15px;
-  padding-left: 5px;
-  color: #f1f1f1;
-}
-
 /* Liste des containers */
 .container {
   width: 70%;
@@ -208,6 +149,77 @@ ul {
   animation-delay: 1s;
   margin: -4px 0 0 216px;
   box-shadow: 16px 0 0 #000, 20px 0 0 #000, 24px 0 0 #000, 28px 0 0 #000, 8px 4px 0 #000, 12px 4px 0 #000, 16px 4px 0 #9a4a01, 20px 4px 0 #9a4a01, 24px 4px 0 #606700, 28px 4px 0 #5fa300, 32px 4px 0 #000, 36px 4px 0 #000, 4px 8px 0 #000, 8px 8px 0 #606700, 12px 8px 0 #606700, 16px 8px 0 #606700, 20px 8px 0 #9a4a01, 24px 8px 0 #9a4a01, 28px 8px 0 #5fa300, 32px 8px 0 #606700, 36px 8px 0 #9a4a01, 40px 8px 0 #000, 4px 12px 0 #000, 8px 12px 0 #9a4a01, 12px 12px 0 #9a4a01, 16px 12px 0 #9a4a01, 20px 12px 0 #9a4a01, 24px 12px 0 #9a4a01, 28px 12px 0 #5fa300, 32px 12px 0 #606700, 36px 12px 0 #606700, 40px 12px 0 #000, 0px 16px 0 #000, 4px 16px 0 #5fa300, 8px 16px 0 #606700, 12px 16px 0 #5fa300, 16px 16px 0 #5fa300, 20px 16px 0 #606700, 24px 16px 0 #606700, 28px 16px 0 #606700, 32px 16px 0 #5fa300, 36px 16px 0 #9a4a01, 40px 16px 0 #9a4a01, 44px 16px 0 #000, 0px 20px 0 #000, 4px 20px 0 #5fa300, 8px 20px 0 #606700, 12px 20px 0 #5fa300, 16px 20px 0 #606700, 20px 20px 0 #000, 24px 20px 0 #000, 28px 20px 0 #606700, 32px 20px 0 #606700, 36px 20px 0 #5fa300, 40px 20px 0 #5fa300, 44px 20px 0 #000, 0px 24px 0 #000, 4px 24px 0 #000, 8px 24px 0 #606700, 12px 24px 0 #606700, 16px 24px 0 #000, 20px 24px 0 #fff, 24px 24px 0 #a5a5a5, 28px 24px 0 #000, 32px 24px 0 #9a4a01, 36px 24px 0 #9a4a01, 40px 24px 0 #000, 44px 24px 0 #000, 0px 28px 0 #000, 4px 28px 0 #fff, 8px 28px 0 #000, 12px 28px 0 #000, 16px 28px 0 #000, 20px 28px 0 #a5a5a5, 24px 28px 0 #a5a5a5, 28px 28px 0 #000, 32px 28px 0 #000, 36px 28px 0 #000, 40px 28px 0 #a5a5a5, 44px 28px 0 #000, 4px 32px 0 #000, 8px 32px 0 #fff, 12px 32px 0 #fff, 16px 32px 0 #fff, 20px 32px 0 #000, 24px 32px 0 #000, 28px 32px 0 #a5a5a5, 32px 32px 0 #a5a5a5, 36px 32px 0 #a5a5a5, 40px 32px 0 #000, 4px 36px 0 #000, 8px 36px 0 #a5a5a5, 12px 36px 0 #fff, 16px 36px 0 #fff, 20px 36px 0 #fff, 24px 36px 0 #a5a5a5, 28px 36px 0 #a5a5a5, 32px 36px 0 #a5a5a5, 36px 36px 0 #a5a5a5, 40px 36px 0 #000, 8px 40px 0 #000, 12px 40px 0 #000, 16px 40px 0 #a5a5a5, 20px 40px 0 #a5a5a5, 24px 40px 0 #a5a5a5, 28px 40px 0 #a5a5a5, 32px 40px 0 #000, 36px 40px 0 #000, 16px 44px 0 #000, 20px 44px 0 #000, 24px 44px 0 #000, 28px 44px 0 #000;
+}
+
+.modale {
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modale:target {
+  display: table;
+  position: absolute;
+}
+
+.modale-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modale-container .modale-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: slideDownFadeIN;
+  animation-duration: 0.5s;
+}
+
+.closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+header {
+  background-color: #5cb85c;
+  font-size: 25px;
+  color: white;
+}
+
+@keyframes slideDownFadeIN {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
